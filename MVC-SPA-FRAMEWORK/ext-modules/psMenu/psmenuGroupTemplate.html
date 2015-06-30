@@ -1,0 +1,15 @@
+﻿<li class="ps-selectable-item " ng-click="clicked()" ng-class="{'ps-item-horizontal':!isVertical()}">
+    <div class="ps-noselect">
+        <i class="fa {{icon}} ps-menu-icon"></i>
+        {{label}}
+        <i ng-if="isVertical()" 
+           class="fa fa-chevron-left ps-group-indicator-left" 
+           ng-class="{'fa-rotate-270' : isOpen}"></i> <!--klasa se pozuiva samo ako je :is open true.--> <!--/prikazi ikonu samo ako je menu verticalan-->
+        
+     </div>
+
+</li>
+<div ng-show="isOpen" class="ps-subitem-section ps-fade-in-animation" 
+     ng-class="{'ps-popup-menu':!isVertical()}"> 
+ <ul ng-transclude></ul> <!--Translucde radi na način da prikaze u ovom slučaju naše iteme koji se nalaze unutar drugog templata. -->
+</div>

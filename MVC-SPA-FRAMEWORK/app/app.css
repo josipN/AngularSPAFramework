@@ -1,0 +1,17 @@
+﻿body {
+
+       background-color: #444;
+       font-family:"Open Sans",Arial,sans-serif;
+
+
+}
+.login-white{
+    background-color:white;
+}
+.container-fluid {
+    padding:0;
+}
+
+.sign-in-form {
+    padding:80px;
+}
